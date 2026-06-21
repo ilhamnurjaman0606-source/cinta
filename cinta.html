@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You & Me ❤️</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(to bottom, #040816, #140b2d, #24104e);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Bintang */
+        .stars {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            background: url("https://www.transparenttextures.com/patterns/stardust.png");
+            animation: moveStars 80s linear infinite;
+        }
+
+        @keyframes moveStars {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 0 1000px;
+            }
+        }
+
+        /* Bulan */
+        .moon-photo1 {
+            position: absolute;
+            top: 50px;
+            right: 100px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow:
+                0 0 15px white,
+                0 0 35px #ff9cff,
+                0 0 60px #ffb3ff;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .moon-photo1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .moon-photo2 {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow:
+                0 0 15px white,
+                0 0 35px #ff9cff,
+                0 0 60px #ffb3ff;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .moon-photo2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .moon::after {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: 0;
+            width: 120px;
+            height: 120px;
+            background: #140b2d;
+            border-radius: 50%;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            font-family: 'Dancing Script', cursive;
+            color: #ffb6ff;
+            text-shadow: 0 0 25px #ff73ff;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ffd6ff;
+        }
+
+        /* Card */
+        .card {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 35px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 30px rgba(255, 255, 255, .1);
+        }
+
+        /* Countdown */
+        .counter {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 120px;
+            padding: 25px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, .08);
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* Timeline */
+        .story {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .story div {
+            padding: 25px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, .08);
+        }
+
+        /* Galeri */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: .5s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Surat */
+        .letter {
+            line-height: 2;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #ffc8ff;
+        }
+
+        @media (max-width:768px) {
+            .hero h1 {
+                font-size: 55px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <div class="moon-photo1">
+        <img src="IMG_20260202_163155_706.jpg">
+    </div>
+
+    <div class="stars"></div>
+
+    <div class="moon-photo2">
+        <img src="IMG_20260621_073841.jpg">
+    </div>
+
+    <section class="hero">
+
+        <h1>You & Me ❤️</h1>
+
+        <p>tidak sengaja mengenalmu,tapi rasanya ingin teryuss bersamamu💖</p>
+
+    </section>
+
+    <div class="card">
+
+        <h2 align="center">💞 Always 💞</h2>
+
+        <br>
+
+        <div class="counter">
+
+            <div class="box">
+                <h1>I</h1>
+            </div>
+
+            <div class="box">
+                <h1>Love</h1>
+            </div>
+
+            <div class="box">
+                <h1>You</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2 align="center">✨ Our Story ✨</h2>
+
+        <br>
+
+        <div class="story">
+
+            <div>
+                <h3>💌 First Chat><</h3>
+
+                <div class="box">
+                    <img src="IMG_20260621_081154_945.jpg">
+                </div>
+
+                <p>22 Mei 2026</p>
+            </div>
+
+            <div>
+                <h3>☕ First Date</h3>
+
+                <div class="box">
+                    <img src="IMG_20260621_081258_882.jpg">
+                </div>
+
+                <p>30 Mei 2026</p>
+            </div>
+
+            <div>
+                <h3>💖 Together</h3>
+
+                <div class="box">
+                    <img src="IMG_20260621_081443_253.jpg">
+                </div>
+
+                <p>∞</p>
+            </div>
+
+            <div>
+                <h3>♾ Forever</h3>
+
+                <div class="box">
+                    <img src="IMG_20260621_081528_739.jpg">
+                </div>
+
+                <p>君と一緒に年を重ねたい。</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2 align="center">📸 Our Gallery 📸</h2>
+
+        <br>
+
+        <div class="gallery">
+
+            <img src="IMG_20260619_165006_987.jpg">
+
+            <p>Asal kamu tahu cintaku bunga secantik inipun kalah ama cantiknya kamu maa><</p>
+
+            <img src="IMG_20260621_083747_233.jpg">
+
+            <p>padahalmah iam pengen ngasih gambar ini teh langsung ke ayang((,pengen peyuk duluuu,tapi tiba² bnget berangkt jadinya dititip ke temen iam(</p>
+
+            <img src="IMG-20260530-WA0073.jpg">
+
+            <p>"berhenti dulu berhenti dulu"/"ada apaa?"/"foto duluu xixixi"</p>
+
+            <img src="IMG_20260621_084152_496.jpg">
+
+            <p>pertemuan awal bukan akhirkan sayang?iam itsumo saaayangg ayaangg</p>
+
+            <img src="IMG_20260621_084355_188.jpg">
+
+            <p>warnanya kesukaan kamu sayang biru & pink,lucu bngetkan><</p>
+
+            <img src="IMG_20260621_084307_572.jpg">
+
+            <p>ayang kalo bboo lucuuu bnget mmwahhh</p>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <h2 align="center">💌 A Little Message For You 💌</h2>
+
+        <br>
+
+        <div class="letter">
+
+            Untukmu,<br><br>
+
+            Jika bintang-bintang di langit adalah alasan aku mencintaimu,
+            maka setiap malam akan terasa kurang tanpa kehadiranmu.<br><br>
+
+            Terima kasih telah menjadi rumah terbaik untukku pulang.<br>
+
+            Aku mencintaimu hari ini, esok, dan selamanya ❤️
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        Thank you for being my everything ❤️
+
+    </footer>
+
+</body>
+
+</html>
